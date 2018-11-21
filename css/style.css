@@ -1,7 +1,7 @@
 *{margin: 0;  padding: 0; border: 0; outline: 0;}
 html, body {height: 100%;}
 
-.container{
+.wrapper{
 	min-height: 100%;
 	max-width: 1280px;
 	margin: 0 auto;
@@ -12,7 +12,6 @@ html, body {height: 100%;}
 
 header{
 	width: 1280px;
-	height: 323px;
 	display: flex;	
 	flex-direction: row;
 	background: #445162;
@@ -38,7 +37,7 @@ footer{
 }
 
 .productname, #whiteblock{
-	height: 323px;
+	padding-bottom: 50px;
 	width: 469px;
 }
 
@@ -80,10 +79,10 @@ footer{
 
 .about{
 	width: 100%;
-	height: 345px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	padding-bottom: 50px;
 }
 
 #aboutproduct{
@@ -92,7 +91,6 @@ footer{
 	margin-top: 49px;
 	margin-left: 50px;
 	width: 660px;
-	height: 345px;
 }
 
 #aboutproduct h2{
@@ -125,11 +123,10 @@ footer{
 	height: 245px;
 }
 
-
 .dignity{
 	width: 1280px;
-	height: 420px;
 	background: #f5f5f5;
+	padding-bottom: 50px;
 }
 
 .dignity h2{
@@ -143,7 +140,7 @@ footer{
 	font-weight: 400;
 }
 
-.sixparagraps{
+.sixparagraphs{
 	display: flex;
 	flex-direction: row;
 	width: 1180px;
@@ -151,9 +148,7 @@ footer{
 	margin-right: auto;
 }
 
-#p123, #p456{
-	height: 270px;
-	width: 50%;
+.threeparagraphs{
 	font-size: 16px;
 	font-family: "Arial";
 	color: rgb(51, 51, 51);
@@ -161,13 +156,13 @@ footer{
 	text-align: left;
 }
 
-#p123 p, #p456 p{
+.threeparagraphs p{
 	margin-left: 50px;
 	position: relative;
 	padding-top: 25px;
 }
 
-#p123 p::before, #p456 p::before{
+.threeparagraphs p::before{
 	position: absolute;
 	top: 30px;
 	left: -42px;
@@ -178,15 +173,12 @@ footer{
 .alltogether{
 	display: flex;
 	flex-direction: row;
-
-	height: 330px;
 	width: 1180px;
 }
 
 .scrinshots{
 	display: block;
 	width: 1180px;
-	height: 437px;
 	margin: 0 auto;
 }
 
@@ -207,12 +199,11 @@ footer{
 	flex-direction: column;
 	justify-content: space-between;
 	width: 590px;
-	height: 330px;
 }
 
 .fortheimage{
-	height: 150px;
 	width: 590px;
+	padding-bottom: 30px;
 }
 
 .fortheimage p{
@@ -236,7 +227,6 @@ footer{
 .bluesquare{
 	float: left;
 	width: 200px;
-	height: 150px;
 	margin-right: 15px;
 }
 
@@ -244,9 +234,10 @@ footer{
 	display: block;
 	background: #f5f5f5;
 	width: 1280px;
-	height: 424px;
-	margin: 0 auto;
-	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 50px;
+	margin-top: 20px;
 }
 
 .reviews h2{
@@ -256,8 +247,7 @@ footer{
 	line-height: 1.2;
 	text-align: center;
 	font-weight: 400;
-	padding-top: 50px;
-
+	padding-bottom: 35px;
 }
 
 .comments{
@@ -265,7 +255,6 @@ footer{
 	flex-direction: row;
 	justify-content: center;
 	width: 1280px;
-	height: 342px;
 }
 
 .leftcomments, .rightcomments{
@@ -274,7 +263,7 @@ footer{
 	flex-direction: column;
 	justify-content: center;
 	width: 590px;
-	height: 342px;
+	padding-bottom: 25px;
 }
 
 .blackquote{
@@ -357,7 +346,6 @@ footer{
 .buyitnow{
 	display: block;
 	margin-top: 50px;
-	height: 606px;
 	width: 1180px;
 	margin-left: auto;
 	margin-right: auto;
@@ -371,6 +359,7 @@ footer{
 	line-height: 1.2;
 	text-align: center;
 	font-weight: 400;
+	padding-bottom: 35px;
 }
 
 .standart, .premium, .lux, .buy, p{
@@ -385,8 +374,8 @@ footer{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	margin: 0 auto;
-	height: 529px;
+	margin-left: auto;
+	margin-right: auto;
 	width: 100%;
 }
 
@@ -433,7 +422,7 @@ footer{
 	height: 40px;
 	margin-right: auto;
 	margin-left: auto;
-	margin-top: 20px;
+	margin-top: 15px;
 	background: rgb(255, 255, 255);
 	text-decoration: none;
 	list-style: none;
@@ -454,63 +443,29 @@ footer{
 	list-style: decimal inside;
 }
 
-#standart ol{
-	height: 90px;
-}
-
-#premium ol{
-	height: 185px;
-}
-
-#lux ol{
-	height: 280px;
-}
-
-#standart{
+.blocks{
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
-	height: 529px;
-	width: 300px;
-	margin-left: 70px;
-}
-
-#premium{
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
-	height: 529px;
-	width: 300px;
-}
-#lux{
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
-	height: 529px;
-	width: 300px;
-	margin-right: 70px;
 }
 
 .standart, .premium, .lux{
 	width: 300px;
 	background: rgb(68,81,98);
+	padding-bottom: 20px;
 }
 
 .standart{
-	height: 310px;
-}
-
-.premium{
-	height: 405px;
+	margin-left: 70px;
 }
 
 .lux{
-	height: 500px;
+	margin-right: 70px;
 }
 
 .contacts{ 
-	width: 1180px; 
-	height: 508px; 
+	width: 1280px; 
+	margin-top: 50px;
 	margin-left: auto;
 	margin-right: auto; 
 	background: rgb(68,81,98);
@@ -535,14 +490,11 @@ footer{
 	flex-direction: row;
 	justify-content: space-around;
 	margin-top: 30px;
-	height: 425px;
-	width: 1180px;
 }
 
 .contactfield1{
 	display: flex;
 	flex-direction: column;
-	height: 360px;
 	margin-right: 45px;
 	margin-left: auto;
 }
@@ -551,6 +503,7 @@ footer{
 	height: 355px;
 	width: 500px;
 	text-align: center;
+	padding-bottom: 50px;
 }
 
 .contactfield1 textarea, input{
@@ -606,9 +559,10 @@ footer{
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
-	height: 260px;
 	width: 437px;
 	text-align: left;
+	margin-right: 50px;
+	padding-bottom: 145px;
 }
 
 .contactfield2 img{
@@ -653,9 +607,10 @@ footer{
 	padding-bottom: 10px;
 }
 
-.references{
+.references li{
 	display: inline-block;
-	
+	list-style: none;
+	text-decoration: none;
 }
 
 .references img{

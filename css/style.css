@@ -8,6 +8,11 @@ html, body {height: 100%;}
 	background: #fff;
 	display: flex;
 	flex-direction: column;
+	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 45s ease infinite;
+	-moz-animation: Gradient 45s ease infinite;
+	animation: Gradient 45s ease infinite;
 }
 
 header{
@@ -36,12 +41,14 @@ footer{
 	line-height: 2;
 }
 
-.productname, #whiteblock{
+.productname,
+#whiteblock{
 	padding-bottom: 50px;
 	width: 469px;
 }
 
-#whiteblock, #podvideo{
+#whiteblock,
+#podvideo{
 	display: block;
 	margin-top: 50px;
 	margin-right: 50px;
@@ -257,7 +264,8 @@ footer{
 	width: 1280px;
 }
 
-.leftcomments, .rightcomments{
+.leftcomments,
+.rightcomments{
 	position: relative;
 	display: flex;
 	flex-direction: column;
@@ -280,13 +288,26 @@ footer{
 	width: 590px;
 }
 
-.comments p{
+.lourens{
 	font-size: 14px;
 	font-family: "Arial";
 	color: rgb(152, 152, 152);
 	line-height: 1.2;
 	text-align: left;
+	padding-left: 15px;
 	margin-top: 15px;
+}
+
+.porro{
+	padding-left: 15px;
+	text-align: left;
+	width: 440px;
+	height: 64px;
+	font-size: 14px;
+	font-family: "Arial";
+	color: rgb(51, 51, 51);
+	font-style: italic;
+	line-height: 1.3;
 }
 
 .justcircle{
@@ -336,20 +357,12 @@ footer{
 	z-index: 5;
 }
 
-.comments blockquote{
-	padding-left: 15px;
-	text-align: left;
-	width: 440px;
-	height: 64px;
-}
-
 .buyitnow{
 	display: block;
 	margin-top: 50px;
 	width: 1180px;
 	margin-left: auto;
 	margin-right: auto;
-	background: #fff;
 }
 
 .buyitnow h2{
@@ -362,7 +375,10 @@ footer{
 	padding-bottom: 35px;
 }
 
-.standart, .premium, .lux, .buy, p{
+.standart,
+.premium,
+.lux,
+.buy, p{
 	-webkit-border-radius: 5px 5px 5px 5px;
 	-moz-border-radius: 5px 5px 5px 5px;
 	-o-border-radius: 5px 5px 5px 5px;
@@ -449,7 +465,9 @@ footer{
 	justify-content: flex-end;
 }
 
-.standart, .premium, .lux{
+.standart,
+.premium,
+.lux{
 	width: 300px;
 	background: rgb(68,81,98);
 	padding-bottom: 20px;
@@ -506,15 +524,16 @@ footer{
 	padding-bottom: 50px;
 }
 
-.contactfield1 textarea, input{
-		-webkit-border-radius: 5px 5px 5px 5px;
-	-moz-border-radius: 5px 5px 5px 5px;
-	-o-border-radius: 5px 5px 5px 5px;
-	-ms-border-radius: 5px 5px 5px 5px;
-	border-radius: 5px 5px 5px 5px;
+.contactfield1 textarea,
+.contactfield1 input{
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	-ms-border-radius: 5px;
+	border-radius: 5px;
 }
 
-#send{
+.send{
 	width: 141px;
 	height: 40px;
 	text-align: center;
@@ -525,13 +544,16 @@ footer{
 	text-transform: uppercase;
 	line-height: 1.5;
 	margin-top: 20px;
+	cursor: pointer;
 }
 
-#send:hover{
+.send:hover{
 	color: orange;
 }
 
-#yourname, #youremail, #message{
+.yourname,
+.youremail,
+.message{
 	font-size: 16px;
 	font-family: "Arial";
 	color: rgb(68, 81, 98);
@@ -540,16 +562,18 @@ footer{
 	padding-left: 10px;
 }
 
-#yourname, #youremail{
+.yourname,
+.youremail{
 	width: 489px;
 	height: 40px;
 }
 
-#youremail, #message{
+.youremail,
+.message{
 	margin-top: 20px;
 }
 
-#message{
+.message{
 	height: 160px;
 	width: 489px;
 	padding-top: 10px;
@@ -597,7 +621,10 @@ footer{
 	margin-right: 5px;
 }
 
-#skype, #icq, #psdmail, #phone{
+#skype, 
+#icq, 
+#psdmail, 
+#phone{
 	display: block;
 	font-size: 16px;
 	font-family: "Arial";
@@ -617,4 +644,169 @@ footer{
 	display: inline-block;
 	width: 48px;
 	height: 50px;
+}
+
+.feedbacks{
+	display: block;
+	width: 1280px;
+	margin-top: 50px;
+}
+
+.wrapper_feeds{
+	display: flex;
+	justify-content: space-between;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+.feedbacks h2{
+	font-size: 30px;
+	font-family: "Arial";
+	color: rgb(255, 255, 255);
+	font-weight: 400;
+	line-height: 1;
+	text-align: center;
+	display: block;
+	height: 32px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.feedbacks form{
+	display: block;
+	margin: 30px;
+}
+
+fieldset{
+	width: 50%;
+	box-sizing: border-box;
+	border: 3px dashed black;
+	margin-top: 20px;
+}
+
+#alternativefeed{
+	width: 50%;
+	box-sizing: border-box;
+	border: 3px dashed black;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+legend{
+	font-size: 30px;
+	font-family: "Arial";
+	color: rgb(255, 255, 255);
+	font-weight: 400;
+	line-height: 1;
+	text-align: left;
+	display: block;
+	height: 32px;
+	margin-left: 15px;
+}
+
+#feedback{
+	height: 160px;
+	width: 489px;
+	padding-top: 10px;
+	padding-left: 10px;
+	font-size: 16px;
+	font-family: "Arial";
+	color: rgb(68, 81, 98);
+	line-height: 1.5;
+	text-align: left;
+
+}
+
+.feedbacks form input, 
+.feedbacks textarea{
+	box-sizing: border-box;
+	border: 1px solid black;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	-ms-border-radius: 5px;
+	border-radius: 5px;
+	display: block;
+}
+
+.feedbacks form input:hover:invalid{
+	background: orange;
+}
+.feedbacks form input:required{
+	background-color: lightyellow;
+}
+
+#phonenumber,
+#age,
+#date{
+	margin-top: 10px;
+	padding-left: 10px;
+	height: 40px;
+	font-size: 16px;
+	font-family: "Arial";
+	color: rgb(68, 81, 98);
+	line-height: 1.5;
+	text-align: left;
+}
+
+label{
+	display: block;
+	margin-top: 20px;
+	font-size: 16px;
+	font-family: "Arial";
+	color: rgb(255, 255, 255);
+	line-height: 1.2;
+	text-align: left;
+}
+
+.feedbacks input[type="submit"]{
+	width: 141px;
+	height: 40px;
+	text-align: center;
+	font-size: 16px;
+	font-family: "Arial";
+	color: rgb(68, 81, 98);
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 1.5;
+	margin-top: 20px;
+	cursor: pointer;
+	margin-left: 200px;
+}
+
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
 }

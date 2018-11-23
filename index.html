@@ -28,7 +28,9 @@
 						<p id="Pariatur">Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam amini dolores. Sequi itaque, unde per- ferendis nemo debitis dolor.</p>
 					</div>
 				</div>
-				<figure id="podvideo"></figure>
+				<video src="./video/thunder.mp4" width="430" height="245" controls muted id="podvideo">
+					<source src="./video/thunder.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+				</video>
 			</section>
 			<section class="dignity">
 				<h2>Dignity and pluses product</h2>
@@ -89,17 +91,15 @@
 						<article class="blackquote">
 							<img src="./img/justcircle.png" alt="justcircle" class="justcircle">
 							<div class="blockquotecontainer">
-								<blockquote>Porro officia cumque deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?
-								<p>Lourens S.</p>
-								</blockquote>
+								<p class="porro">Porro officia cumque deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?</p>
+								<p class="lourens">Lourens S.</p>
 							</div>
 						</article>
 						<article class="blackquote">
 							<img src="./img/justcircle.png" alt="justcircle" class="justcircle">
 							<div class="blockquotecontainer">
-								<blockquote>Porro officia cumque deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?
-								<p>Lourens S.</p>
-								</blockquote>
+								<p class="porro">Porro officia cumque deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?</p>
+								<p class="lourens">Lourens S.</p>
 							</div>
 						</article>
 					</div>
@@ -107,17 +107,15 @@
 						<article class="blackquote1">
 							<img src="./img/justcircle.png" alt="justcircle" class="justcircle">
 							<div class="blockquotecontainer">
-								<blockquote>Porro officia cumque deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?
-								<p>Lourens S.</p>
-								</blockquote>
+								<p class="porro">Porro officia cumque deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?</p>
+								<p class="lourens">Lourens S.</p>
 							</div>
 						</article>
 						<article class="blackquote1">
 							<img src="./img/justcircle.png" alt="justcircle" class="justcircle">
 							<div class="blockquotecontainer">
-								<blockquote>Porro officia cumque deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?
-								<p>Lourens S.</p>
-								</blockquote>
+								<p class="porro">Porro officia cumque deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?</p>
+								<p class="lourens">Lourens S.</p>
 							</div>
 						</article>
 					</div>	
@@ -188,10 +186,10 @@
 				<div class="contactarea">
 					<div class="contactfield1">
 						<form action="#">
-							<input type="text" placeholder="Your name:" id="yourname">
-							<input type="email" placeholder="Your email:" id="youremail">
-							<textarea name="message" id="message" placeholder="Your message:"></textarea>
-							<input type="submit" value="send" id="send">
+							<input type="text" name="name" placeholder="Your name:" class="yourname">
+							<input type="email" name="email" placeholder="Your email:" class="youremail">
+							<textarea name="message" class="message" placeholder="Your message:"></textarea>
+							<input type="submit" value="send" class="send">
 						</form>
 					</div>
 					<div class="contactfield2">
@@ -207,6 +205,30 @@
 							<li><a href="https://www.youtube.com/" target="_blank"><img src="./img/youtube.png" alt="youtube"></a></li>
 						</ul>	
 					</div>
+				</div>
+			</section>
+			<section class="feedbacks">
+				<h2>Feedback</h2>
+				<div class="wrapper_feeds">
+					<fieldset>
+						<legend>Tell us about yourself</legend>
+						<form action="#">
+							<input type="text" name="name" class="yourname" required="required" minlength="3" maxlength="50" value="Benedict Cumberbacth">
+							<input type="email" name="email" placeholder="Your email:" class="youremail" required="required">
+							<textarea name="message" class="message" placeholder="Your message:"></textarea>
+							<label>Enter your age<input type="number" min="0" max="120" step="1" placeholder="Age" id="age" required="required"></label>
+							<label>Enter your birth date<input type="date" name="date" id="date" required="required"></label>
+							<label>Your phone number<input type="tel" name="phone" required="required" pattern="[0-11]{,11}" id="phonenumber" placeholder="+7 (___) 123-45-67"></label>
+							<input type="submit" value="send" class="send">
+						</form>
+					</fieldset>
+					<fieldset id="alternativefeed">
+						<legend>And leave us a feedback</legend>
+						<form action="#">
+							<textarea name="message" class="message" placeholder="Your message:"></textarea>
+							<input type="submit" value="Send" class="send">
+						</form>
+					</fieldset>
 				</div>
 			</section>
 		</main>

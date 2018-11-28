@@ -10,16 +10,16 @@ html, body {height: 100%;}
 	flex-direction: column;
 	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
 	background-size: 400% 400%;
-	-webkit-animation: Gradient 45s ease infinite;
-	-moz-animation: Gradient 45s ease infinite;
-	animation: Gradient 45s ease infinite;
+	-webkit-animation: Gradient 35s ease infinite;
+	-moz-animation: Gradient 35s ease infinite;
+	animation: Gradient 35s ease infinite;
 }
 
 header{
 	width: 1280px;
 	display: flex;	
 	flex-direction: row;
-	background: #445162;
+	background: radial-gradient(at top left, #EECFBA, #C5DDE8, #FDE);
 	justify-content: space-between;
 }
 
@@ -41,8 +41,14 @@ footer{
 	line-height: 2;
 }
 
+#productpicture img{
+	margin-top: 50px;
+	height: 400px;
+	width: 400px;
+}
+
 .productname,
-#whiteblock{
+#productpicture{
 	padding-bottom: 50px;
 	width: 469px;
 }
@@ -199,6 +205,11 @@ footer{
 	margin-bottom: 35px;
 	margin-top: 50px;
 	font-weight: 400;
+}
+
+.somepanda{
+	width: 200px;
+	height: 150px;
 }
 
 .description{
@@ -518,8 +529,8 @@ footer{
 }
 
 .contactfield1 form{
-	height: 355px;
-	width: 500px;
+	max-height: 355px;
+	max-width: 500px;
 	text-align: center;
 	padding-bottom: 50px;
 }
@@ -574,8 +585,10 @@ footer{
 }
 
 .message{
-	height: 160px;
-	width: 489px;
+	min-height: 160px;
+	min-width: 489px;
+	max-height: 160px;
+	max-width: 489px;
 	padding-top: 10px;
 }
 
@@ -634,15 +647,25 @@ footer{
 	padding-bottom: 10px;
 }
 
-.references li{
-	display: inline-block;
-	list-style: none;
-	text-decoration: none;
+.references span {
+	display: block;
+	width: 50px;
+	height: 48px;
+	text-align: center;
 }
 
-.references img{
-	display: inline-block;
-	width: 48px;
+.references a{
+	margin-top: 12px;
+}
+
+.references a:hover{
+	color: orange;
+}
+
+.references{
+	display: flex;
+	justify-content: left;
+	align-items: center;
 	height: 50px;
 }
 
@@ -698,10 +721,9 @@ legend{
 	color: rgb(255, 255, 255);
 	font-weight: 400;
 	line-height: 1;
-	text-align: left;
+	text-align: center;
 	display: block;
 	height: 32px;
-	margin-left: 15px;
 }
 
 #feedback{
@@ -714,7 +736,6 @@ legend{
 	color: rgb(68, 81, 98);
 	line-height: 1.5;
 	text-align: left;
-
 }
 
 .feedbacks form input, 

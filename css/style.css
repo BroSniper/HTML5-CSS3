@@ -19,8 +19,8 @@ header{
 	width: 1280px;
 	display: flex;	
 	flex-direction: row;
-	background: radial-gradient(at top left, #EECFBA, #C5DDE8, #FDE);
 	justify-content: space-between;
+	background: radial-gradient(at top left, #EECFBA, #C5DDE8, #FDE);
 }
 
 main{
@@ -43,14 +43,7 @@ footer{
 
 #productpicture img{
 	margin-top: 50px;
-	height: 400px;
 	width: 400px;
-}
-
-.productname,
-#productpicture{
-	padding-bottom: 50px;
-	width: 469px;
 }
 
 #whiteblock,
@@ -61,10 +54,19 @@ footer{
 	text-align: center;
 }
 
-.productname{
+.cutepanda{
 	display: block;
+}
+
+.productname{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
 	margin-top: 40px;
 	margin-left: 50px;
+	margin-right: 50px;
+	padding-bottom: 50px;
 }
 
 .productname h1{
@@ -77,12 +79,13 @@ footer{
 	font-weight: 400;
 }
 
-.productname p{
+.productname li{
 	font-size: 20px;
 	font-family: "Arial";
 	color: rgb(255, 255, 255);
 	line-height: 1.8;
 	text-align: left;
+	list-style: none;
 }
 
 .productname p::before{
@@ -138,7 +141,7 @@ footer{
 
 .dignity{
 	width: 1280px;
-	background: #f5f5f5;
+	background: linear-gradient(-45deg, #02010c 10%, #f6290c 24%, #f6290c 24%, #f16f5c 27%, #f16f5c 27%, #02010c 35%, #1aba09 41%, #f02f17 51%, #59084f 58%, #0d5b9b 70%, #e0b014 90%, #e73827 100%);
 	padding-bottom: 50px;
 }
 
@@ -148,7 +151,7 @@ footer{
 	padding-top: 50px;
 	font-size: 30px;
 	font-family: "Arial";
-	color: rgb(68, 81, 97);
+	color: rgb(0, 0, 0);
 	line-height: 1.2;
 	font-weight: 400;
 }
@@ -164,7 +167,7 @@ footer{
 .threeparagraphs{
 	font-size: 16px;
 	font-family: "Arial";
-	color: rgb(51, 51, 51);
+	color: rgb(0, 0, 0);
 	line-height: 1.5;
 	text-align: left;
 }
@@ -186,13 +189,8 @@ footer{
 .alltogether{
 	display: flex;
 	flex-direction: row;
-	width: 1180px;
-}
-
-.scrinshots{
-	display: block;
-	width: 1180px;
-	margin: 0 auto;
+	margin-left: 50px;
+	margin-right: 50px;
 }
 
 #Scrinshots{
@@ -200,7 +198,7 @@ footer{
 	display: block;
 	font-size: 30px;
 	font-family: "Arial";
-	color: rgb(68, 81, 97);
+	color: rgb(0, 0, 0);
 	line-height: 1.2;
 	margin-bottom: 35px;
 	margin-top: 50px;
@@ -210,6 +208,11 @@ footer{
 .somepanda{
 	width: 200px;
 	height: 150px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	-ms-border-radius: 50%;
+	border-radius: 50%;
 }
 
 .description{
@@ -227,7 +230,7 @@ footer{
 .fortheimage p{
 	font-size: 16px;
 	font-family: "Arial";
-	color: rgb(51, 51, 51);
+	color: rgb(0, 0, 0);
 	line-height: 1.5;
 	text-align: left;
 	margin-right: 10px;
@@ -250,18 +253,18 @@ footer{
 
 .reviews{
 	display: block;
-	background: #f5f5f5;
 	width: 1280px;
 	margin-left: auto;
 	margin-right: auto;
 	padding-top: 50px;
-	margin-top: 20px;
+	background: linear-gradient(45deg, #a9ea6b 6%,#9e3897 47%,#210404 98%);
+	background-size: 100% 200%;
 }
 
 .reviews h2{
 	font-size: 30px;
 	font-family: "Arial";
-	color: rgb(68, 81, 97);
+	color: rgb(0, 0, 0);
 	line-height: 1.2;
 	text-align: center;
 	font-weight: 400;
@@ -379,7 +382,7 @@ footer{
 .buyitnow h2{
 	font-size: 30px;
 	font-family: "Arial";
-	color: rgb(68, 81, 97);
+	color: rgb(0, 0, 0);
 	line-height: 1.2;
 	text-align: center;
 	font-weight: 400;
@@ -497,7 +500,8 @@ footer{
 	margin-top: 50px;
 	margin-left: auto;
 	margin-right: auto; 
-	background: rgb(68,81,98);
+	background: radial-gradient(ellipse at center, #02010c 20%,#f6290c 24%,#f6290c 24%,#f16f5c 27%,#f16f5c 27%,#02010c 35%,#1aba09 41%,#f02f17 51%,#59084f 58%,#0d5b9b 70%,#e0b014 84%,#e73827 100%);
+
 } 
 
 .contacts h2{
@@ -647,32 +651,41 @@ footer{
 	padding-bottom: 10px;
 }
 
-.references span {
-	display: block;
+.references{
+	display: flex;
+	width: 300px;
+	justify-content: space-between;
+	font-size: 23px;
+}
+
+.references li {
+	display: inline-block;
 	width: 50px;
 	height: 48px;
+	margin-right: 5px;
 	text-align: center;
+	background: white;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	-ms-border-radius: 50%;
+	border-radius: 50%;
 }
 
 .references a{
-	margin-top: 12px;
+	display: block;
+	margin-top: 11px;
 }
 
 .references a:hover{
 	color: orange;
 }
 
-.references{
-	display: flex;
-	justify-content: left;
-	align-items: center;
-	height: 50px;
-}
-
 .feedbacks{
 	display: block;
 	width: 1280px;
 	margin-top: 50px;
+	margin-bottom: 30px;
 }
 
 .wrapper_feeds{

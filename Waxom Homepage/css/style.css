@@ -225,7 +225,6 @@ footer {
 	width: 100px;
 	position: absolute;
 	bottom: 40px;
-	left: 900px;
 }
 
 .banner form input {
@@ -1455,9 +1454,6 @@ footer {
 }
 
 @media screen and (min-width: 150px) and (max-width: 1020px) {
-	.icons {
-		display: none;
-	}
 	.main_nav {
 		display: none;
 		margin-left: 0;
@@ -1495,7 +1491,6 @@ footer {
 		color: rgb(255, 255, 255);
 		line-height: 1.2;
 	}
-
 	#menu {
 		position: absolute;
 		opacity: 0;
@@ -1527,7 +1522,6 @@ footer {
 	}
 	.counters div {
 		margin-right: 0;
-
 	}
 }
 
@@ -1535,27 +1529,57 @@ footer {
 	.toggle-menu {
 		display: none;
 	}
-}
-
-@media screen and (max-width: 310px) {
-	.new_logo {
-		margin-right: 0;
+	.additional_information {
+		display: none;
+	}
+	.links {
+		flex-direction: column;
+	}
+	.links nav {
+		display: none;
+	}
+	.breadcrumbs {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.breadcrumbs li::before {
+		display: none;
 	}
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 610px) {
 	.nam_liber_tempor_cum_soluta_nobis_eleifend_opti {
 		display: none;
 	}
 	.services {
 		flex-direction: column;
 	}
+	.services div {
+		margin-right: 0;
+	}
 	.video {
+		display: none;
+	}
+	.header_and_banner {
+		padding-bottom: 40px;
+	}
+	.banner {
+		display: none;
+	}
+	.toggle-menu {
 		display: none;
 	}
 }
 
 @media screen and (max-width: 800px) {
+	.links {
+		margin-left: 15px;
+	}
+	.designed_by {
+		margin-right: 15px;
+	}
 	.text_boxes_wrapper {
 		flex-direction: column;
 		justify-content: center;
@@ -1568,9 +1592,35 @@ footer {
 	.text_boxes_wrapper p {
 		text-align: center;
 	}
+	.excellent_for_mobile_devices_ h2 {
+		text-align: center;
+	}
+	.excellent_for_mobile_devices_ ul li p::before {
+		margin-left: 0;
+	}
+	.excellent_for_mobile_devices_ p,
+	.excellent_for_mobile_devices_ ul {
+		margin-left: 10px;
+		margin-right: 10px;
+	}
 }
 
 @media screen and (max-width: 1200px) {
+	.designed_by {
+		margin-right: 0;
+	}
+	.links {
+		margin-right: 0;
+	}
+	.waxom_about {
+		margin-left: 20px;
+	}
+	.new_logo {
+		margin-right: 0;
+	}
+	.icons {
+		display: none;
+	}
 	.project_wrapper_1-3,
 	.project_wrapper_4-6 {
 		display: flex;
@@ -1584,7 +1634,6 @@ footer {
 		margin-top: 0;
 		margin-bottom: 30px;
 	}
-
 	.iphone_pic {
 		display: none;
 	}
@@ -1613,6 +1662,14 @@ footer {
 	.dribble_widget h2 {
 		text-align: center;
 	}
+	.don_t_forget_to_rate_the_template__thanks_so_much_,
+	.waxom_multipurpose_wordpress_theme,
+	.purchase_now,
+	.don_t_forget_to_rate_the_template__thanks_so_much_,
+	.waxom_is_realization_of_your_ideas_paragraphs {
+		margin-left: 10px;
+		margin-right: 10px;	
+	}
 }
 
 @media screen and (max-width: 560px) {
@@ -1624,17 +1681,29 @@ footer {
 	}
 }
 
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 450px) {
 	.designed_by {
+		display: none;
+	}
+	.breadcrumbs {
 		margin-right: 0;
 	}
-	.links {
-		margin-right: 0;
+	.our_latest_projects {
+		display: none;
+	}
+	.recent_posts {
+		display: none;
 	}
 }
 
-@media screen and (max-width: 450px) {
-	.designed_by {
+@media screen and (max-width: 250px) {
+	.iphone_version {
+		display: none;
+	}
+	.waxom_is_realization_of_your_ideas {
+		display: none;
+	}
+	.services {
 		display: none;
 	}
 }

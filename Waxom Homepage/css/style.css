@@ -1,8 +1,6 @@
 *{margin: 0; padding: 0; border: 0; outline: 0;}
 
 .wrapper {
-	display: flex;
-	flex-direction: column;
 	min-height: 100%;
 	max-width: 1920px;
 	margin: 0 auto;
@@ -37,22 +35,10 @@ footer {
 
 /*Header*/
 
-.logo {
+.new_logo {
 	display: block;
-	float: left;
-	width: 64px;
-	height: 57px;
-	padding-top: 40px;
-	margin-left: 15px;
-}
-
-.logo_text {
-	display: inline-block;
-	float: left;
-	margin-top: 50px;
+	margin-top: 40px;
 	margin-right: 190px;
-	width: 115px;
-	height: 26px;
 }
 
 .main_nav {
@@ -174,7 +160,7 @@ footer {
 	align-items: center;
 }
 
-.Unique_and_Modern_Design {
+.unique_and_modern_design {
 	font-size: 36px;
 	font-family: "Raleway";
 	color: rgb(255, 255, 255);
@@ -183,7 +169,7 @@ footer {
 	margin-left: 15px;
 }
 
-.Portfolio_PSD_Template {
+.portfolio_psd_template {
 	font-size: 52px;
 	font-family: "Raleway";
 	color: rgb(255, 255, 255);
@@ -195,7 +181,7 @@ footer {
 	margin-bottom: 5px;
 }
 
-.Nam_liber_tempor_cum_soluta_nobis_eleifend_opti {
+.nam_liber_tempor_cum_soluta_nobis_eleifend_opti {
 	display: block;
 	font-size: 15px;
 	font-family: "Montserrat";
@@ -207,7 +193,7 @@ footer {
 	margin-left: 25px;
 }
 
-.Get_Started {
+.get_started {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -229,7 +215,7 @@ footer {
 	margin-top: 50px;
 }
 
-.Get_Started:hover {
+.get_started:hover {
 	color: orange;
 }
 
@@ -239,7 +225,7 @@ footer {
 	width: 100px;
 	position: absolute;
 	bottom: 40px;
-	left: 908px;
+	left: 900px;
 }
 
 .banner form input {
@@ -257,24 +243,22 @@ footer {
 
 /*Services*/
 
-.Services {
+.services {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	background: rgb(255, 255, 255);
 }
 
-.Services div {
+.services div {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	align-items: center;
 	margin-right: 30px;
 	margin-top: 81px;
 	margin-bottom: 81px;
 }
 
-.Services figcaption {
+.services figcaption {
 	font-size: 22px;
 	font-family: "Raleway";
 	color: rgb(85, 85, 85);
@@ -285,13 +269,18 @@ footer {
 	margin-bottom: 15px;
 }
 
-.Services figure {
+.services div:hover figcaption {
+	color: rgb(199, 178, 153);
+}
+
+.services figure {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	justify-content: center;
 }
 
-.Services p {
+.services p {
 	font-size: 14px;
 	font-family: "Montserrat";
 	color: rgb(140, 140, 140);
@@ -300,21 +289,44 @@ footer {
 	margin-bottom: 30px;
 }
 
-.Development figcaption {
-  color: rgb(199, 178, 153);
+.services div:hover .hover-color {
+	fill: rgb(199, 178, 153);
 }
 
-.development_icon {
-	margin-left: 10px;
+.development_wrapper {
+	padding-top: 10px;
+}
+
+.development_wrapper figcaption {
+	margin-bottom: 14px;
+}
+
+.customization_wrapper {
+	padding-top: 6px;
+}
+
+.customization_wrapper figcaption {
+	margin-bottom: 14px;
+}
+
+.marketing_wrapper {
+	padding-top: 13px;
 }
 
 .services_line {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 	width: 70px;
 	height: 3px;
 }
+
+.services div:hover .services_line {
+	content: url(../img/Services_development_line.png);
+}
 /*Waxom_is_Realization_of_your_Ideas*/
 
-.Waxom_is_Realization_of_your_Ideas {
+.waxom_is_realization_of_your_ideas {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
@@ -324,7 +336,7 @@ footer {
 	padding-bottom: 508px;
 }
 
-.Waxom_is_Realization_of_your_Ideas_h2 {
+.waxom_is_realization_of_your_ideas_h2 {
 	font-size: 30px;
 	font-family: "Raleway";
 	color: rgb(85, 85, 85);
@@ -335,14 +347,13 @@ footer {
 	margin-bottom: 22px;
 }
 
-.Waxom_is_Realization_of_your_Ideas_paragraphs{
+.waxom_is_realization_of_your_ideas_paragraphs{
 	font-size: 16px;
 	font-family: "Montserrat";
 	color: rgb(140, 140, 140);
 	line-height: 1.75;
 	text-align: center;
 }
-
 
 /*Text Boxes*/
 
@@ -358,7 +369,7 @@ footer {
 	margin-bottom: 47px;
 	margin-right: 470px;
 }
-.Waxom_Multipurpose_WordPress_Theme {
+.waxom_multipurpose_wordpress_theme {
 	font-weight: 400;
 	font-size: 28px;
 	font-family: "Raleway";
@@ -367,11 +378,11 @@ footer {
 	text-align: left;
 }
 
-.Waxom_Multipurpose_WordPress_Theme span {
+.waxom_multipurpose_wordpress_theme span {
 	color: rgb(199, 178, 153);
 }
 
-.Don_t_Forget_to_Rate_the_Template__Thanks_so_much_ {
+.don_t_forget_to_rate_the_template__thanks_so_much_ {
 	font-size: 17px;
 	font-family: "Montserrat";
 	color: rgb(97, 88, 85);
@@ -380,7 +391,7 @@ footer {
 	margin-top: 5px;
 }
 
-.Purchase_Now {
+.purchase_now {
 	display: flex;
 	align-items: center;
 	text-decoration: none;
@@ -400,7 +411,7 @@ footer {
 	padding-right: 28px;
 }
 
-.Purchase_Now:hover {
+.purchase_now:hover {
 	color: orange;
 }
 
@@ -411,7 +422,6 @@ footer {
 	flex-direction: column;
 	justify-content: center;
 	align-content: center;
-
 }
 
 .our_latest_projects h2 {
@@ -425,7 +435,7 @@ footer {
 	margin-top: 77px;
 }
 
-.our_latest_projects .Investigationes_demonstraverunt_lectores_legere {
+.our_latest_projects .investigationes_demonstraverunt_lectores_legere {
 	font-size: 16px;
 	font-family: "Montserrat";
 	color: rgb(140, 140, 140);
@@ -436,7 +446,7 @@ footer {
 
 /*buttons*/
 
-.All {
+.all {
 	font-size: 14px;
 	font-family: "Montserrat";
 	color: rgb(255, 255, 255);
@@ -447,7 +457,7 @@ footer {
 	padding-right: 25px;
 }
 
-.Web_Design {
+.web_design {
 	font-size: 14px;
 	font-family: "Montserrat";
 	color: rgb(140, 140, 140);
@@ -457,7 +467,7 @@ footer {
 	padding-right: 11px;
 }
 
-.Mobile_App {
+.mobile_app {
 	font-size: 14px;
 	font-family: "Montserrat";
 	color: rgb(140, 140, 140);
@@ -467,7 +477,7 @@ footer {
 	padding-right: 19px;
 }
 
-.Illustration {
+.illustration {
 	font-size: 14px;
 	font-family: "Montserrat";
 	color: rgb(140, 140, 140);
@@ -477,7 +487,7 @@ footer {
 	padding-right: 21px;
 }
 
-.Photography {
+.photography {
 	font-size: 14px;
 	font-family: "Montserrat";
 	color: rgb(140, 140, 140);
@@ -622,7 +632,7 @@ footer {
 	margin-bottom: 30px;
 }
 
-.Load_More_form {
+.load_more_form {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -630,7 +640,7 @@ footer {
 	margin-bottom: 80px;
 }
 
-.Load_More {
+.load_more {
 	font-size: 14px;
 	font-family: "Raleway";
 	color: rgb(255, 255, 255);
@@ -651,19 +661,21 @@ footer {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	height: 705px;
 	position: relative;
+	padding: 186px 0;
+	background: url(../img/video_background.png) no-repeat;
+	background-size: 100% 100%;
 }
 
-.video video {
+/*.video video {
 	display: block;
 	width: 100%;
 	height: 100%;
 	position: absolute;
 	top: 0;
 	left: 0;
-	z-index: -100;
-}
+	z-index: 0;
+}*/
 
 .video form {
 	display: flex;
@@ -675,6 +687,8 @@ footer {
 	margin-top: 30px;
 	margin-bottom: 30px;
 	margin-left: 10px;
+	position: relative;
+	z-index: 1;
 }
 
 .video button {
@@ -690,6 +704,8 @@ footer {
 	margin-bottom: 15px;
 	padding-left: 10px;
 	font-weight: 400;
+	position: relative;
+	z-index: 1;
 }
 
 .video p {
@@ -699,7 +715,8 @@ footer {
 	line-height: 1.75;
 	text-align: center;
 	padding-left: 30px;
-
+	position: relative;
+	z-index: 1;
 }
 
 ._03_26 {
@@ -710,35 +727,29 @@ footer {
 	text-align: center;
 	margin-top: 25px;
 	margin-bottom: 10px;
+	position: relative;
+	z-index: 1;
 }
-
 
 /*Iphone section*/
 
 .iphone_version {
 	display: flex;
-	flex-direction: row;
 	justify-content: center;
-	background: #fbfaf8;
+	background: white;
 }
 
 .iphone_pic {
 	display: flex;
-	justify-content: flex-end;
 	align-items: flex-end;
-	margin-left: 60px;
-	margin-right: 20px;
+	justify-content: flex-end;
 }
 
-.iphone_pic img {
-	margin-top: 79px;
-}
-
-.Excellent_for_Mobile_Devices_ {
+.excellent_for_mobile_devices_ {
 	margin-top: 190px
 }
 
-.Excellent_for_Mobile_Devices_ h2 {
+.excellent_for_mobile_devices_ h2 {
 	font-size: 30px;
 	font-family: "Raleway";
 	color: rgb(85, 85, 85);
@@ -747,12 +758,12 @@ footer {
 	text-align: left;
 }
 
-.Excellent_for_Mobile_Devices_ ul {
+.excellent_for_mobile_devices_ ul {
 	margin-top: 30px;
 	margin-bottom: 174px;
 }
 
-.Excellent_for_Mobile_Devices_ ul li {
+.excellent_for_mobile_devices_ ul li {
 	display: block;
 	list-style: none;
 	font-size: 16px;
@@ -762,12 +773,12 @@ footer {
 	text-align: left;
 }
 
-.Excellent_for_Mobile_Devices_ ul li p {
+.excellent_for_mobile_devices_ ul li p {
 	display: flex;
 	align-items: center;
 }
 
-.Excellent_for_Mobile_Devices_ ul li p::before {
+.excellent_for_mobile_devices_ ul li p::before {
 	display: flex;
 	height: 21px;
 	content: url(../img/iphone_arrows.png);
@@ -775,7 +786,7 @@ footer {
 	margin-left: 50px;
 }
 
-.Qisi_enim_ad_minim_veniam__quis_nostrud_exerci_ {
+.qisi_enim_ad_minim_veniam__quis_nostrud_exerci_ {
 	font-size: 16px;
 	font-family: "Montserrat";
 	color: rgb(140, 140, 140);
@@ -848,14 +859,14 @@ footer {
 
 /*Resent posts*/
 
-.Recent_Posts {
+.recent_posts {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
 
-.Recent_posts_h2 {
+.recent_posts_h2 {
 	font-size: 30px;
 	font-family: "Raleway";
 	color: rgb(85, 85, 85);
@@ -866,7 +877,7 @@ footer {
 	margin-bottom: 15px;
 }
 
-.Recent_Posts .Investigationes_demonstraverunt_lectores_legere {
+.recent_posts .investigationes_demonstraverunt_lectores_legere {
 	font-size: 16px;
 	font-family: "Montserrat";
 	color: rgb(140, 140, 140);
@@ -906,21 +917,21 @@ footer {
 	background: rgb(199,178,153);
 }
 
-.recent_posts_first_article:hover .Sep_,
-.recent_posts_second_article:hover .Sep_,
-.recent_posts_third_article:hover .Sep_ {
+.recent_posts_first_article:hover .sep_,
+.recent_posts_second_article:hover .sep_,
+.recent_posts_third_article:hover .sep_ {
 	background: rgb(164,141,114);
 }
 
-.recent_posts_first_article:hover .Lorem_ipsum_dolor_sit_amet,
-.recent_posts_second_article:hover .Lorem_ipsum_dolor_sit_amet,
-.recent_posts_third_article:hover .Lorem_ipsum_dolor_sit_amet {
+.recent_posts_first_article:hover .lorem_ipsum_dolor_sit_amet,
+.recent_posts_second_article:hover .lorem_ipsum_dolor_sit_amet,
+.recent_posts_third_article:hover .lorem_ipsum_dolor_sit_amet {
   color: rgb(199, 178, 153);
 }
 
-.recent_posts_first_article:hover .Claritas_est_etiam_processus_dynamicus__qui_seq_1,
-.recent_posts_second_article:hover .Claritas_est_etiam_processus_dynamicus__qui_seq_1,
-.recent_posts_third_article:hover .Claritas_est_etiam_processus_dynamicus__qui_seq_1 {
+.recent_posts_first_article:hover .claritas_est_etiam_processus_dynamicus__qui_seq_1,
+.recent_posts_second_article:hover .claritas_est_etiam_processus_dynamicus__qui_seq_1,
+.recent_posts_third_article:hover .claritas_est_etiam_processus_dynamicus__qui_seq_1 {
   color: rgb(255, 255, 255);
 }
 
@@ -974,7 +985,7 @@ footer {
 	height: 35px;
 }
 
-.Sep_ {
+.sep_ {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -989,10 +1000,11 @@ footer {
 	z-index: 1;
 	background: rgb(37,37,37);
 	width: 50px;
-	height: 35px;
+	padding-top: 2px;
+	padding-bottom: 2px;
 }
 
-.Lorem_ipsum_dolor_sit_amet {
+.lorem_ipsum_dolor_sit_amet {
 	font-size: 20px;
 	font-family: "Raleway";
 	color: rgb(85, 85, 85);
@@ -1002,7 +1014,7 @@ footer {
 	margin-top: 30px;
 }
 
-.Claritas_est_etiam_processus_dynamicus__qui_seq_1 {
+.claritas_est_etiam_processus_dynamicus__qui_seq_1 {
 	font-size: 14px;
 	font-family: "Montserrat";
 	color: rgb(140, 140, 140);
@@ -1010,9 +1022,10 @@ footer {
 	text-align: left;
 	margin-left: 30px;
 	margin-top: 20px;
+	width: 340px;
 }
 
-.Recent_posts_read_more {
+.recent_posts_read_more {
 	display: inline-block;
 	text-decoration: none;
 	font-size: 14px;
@@ -1025,11 +1038,11 @@ footer {
 	margin-bottom: 35px;
 }
 
-.Recent_posts_read_more:hover {
+.recent_posts_read_more:hover {
 	color: orange;
 }
 
-.Recent_posts_read_more::after {
+.recent_posts_read_more::after {
 	content: url(../img/recent_posts_read_more_arrow.png);
 	margin-left: 7px;
 }
@@ -1102,16 +1115,8 @@ footer {
 	color: orange;
 }
 
-.logo_footer {
+.new_logo_footer {
 	display: block;
-	float: left;
-	width: 64px;
-	height: 57px;
-}
-
-.logo_text_footer {
-	display: inline-block;
-	padding-top: 10px;
 }
 
 .waxom_about p {
@@ -1126,7 +1131,7 @@ footer {
 	padding-bottom: 25px;
 }
 
-.recent_posts h2,
+.recent_posts_footer h2,
 .our_twitter h2,
 .dribble_widget h2 {
 	font-size: 24px;
@@ -1138,7 +1143,7 @@ footer {
 	margin-top: 26px;
 }
 
-.recent_posts {
+.recent_posts_footer {
 	display: flex;
 	flex-direction: column;
 	margin-right: 25px;
@@ -1160,7 +1165,7 @@ footer {
 	margin-top: 10px;
 }
 
-.September_08__2015 {
+.september_08__2015 {
 	font-size: 12px;
 	font-family: "Montserrat";
 	color: rgb(54, 54, 54);
@@ -1170,11 +1175,11 @@ footer {
 	margin-top: 6px;
 }
 
-.September_08__2015 span {
+.september_08__2015 span {
 	color: rgb(255, 255, 255);
 }
 
-.Lorem_ipsum_dolor_sit_amet__consectetuer_adipis {
+.lorem_ipsum_dolor_sit_amet__consectetuer_adipis {
 	font-size: 14px;
 	font-family: "Montserrat";
 	color: rgb(85, 85, 85);
@@ -1182,7 +1187,7 @@ footer {
 	text-align: left;
 }
 
-.Diam_nonummy_nibh_euismod_tincidunt_ut_laoreet_ {
+.diam_nonummy_nibh_euismod_tincidunt_ut_laoreet_ {
 	font-size: 14px;
 	font-family: "Montserrat";
 	color: rgb(199, 178, 153);
@@ -1190,11 +1195,11 @@ footer {
 	text-align: left;
 }
 
-.Diam_nonummy_nibh_euismod_tincidunt_ut_laoreet span {
+.diam_nonummy_nibh_euismod_tincidunt_ut_laoreet span {
 	color: rgb(199, 178, 153);
 }
 
-.Claritas_est_etiam_processus_dynamicus__qui_seq {
+.claritas_est_etiam_processus_dynamicus__qui_seq {
 	font-size: 14px;
 	font-family: "Montserrat";
 	color: rgb(85, 85, 85);
@@ -1221,14 +1226,14 @@ footer {
 }
 
 ._waxom_Cum_soluta_nobis_eleifend_option_congue span a,
-.Mirum_est__envato_notare_quam_littera_gothica__ span a,
-.Soluta_nobis_option_bit_ly_1Hniso7 span a {
+.mirum_est__envato_notare_quam_littera_gothica__ span a,
+.soluta_nobis_option_bit_ly_1Hniso7 span a {
 	text-decoration: none;
 }
 
 ._waxom_Cum_soluta_nobis_eleifend_option_congue span a:hover,
-.Mirum_est__envato_notare_quam_littera_gothica__ span a:hover,
-.Soluta_nobis_option_bit_ly_1Hniso7 span a:hover {
+.mirum_est__envato_notare_quam_littera_gothica__ span a:hover,
+.soluta_nobis_option_bit_ly_1Hniso7 span a:hover {
 	color: orange;
 }
 
@@ -1252,7 +1257,7 @@ footer {
 	text-align: left;
 }
 ._waxom_Cum_soluta_nobis_eleifend_option_congue span a,
-.Mirum_est__envato_notare_quam_littera_gothica__ span a {
+.mirum_est__envato_notare_quam_littera_gothica__ span a {
 	color: rgb(0, 191, 243);
 }
 
@@ -1271,7 +1276,7 @@ footer {
 	margin-bottom: 10px;
 }
 
-.Mirum_est__envato_notare_quam_littera_gothica__ {
+.mirum_est__envato_notare_quam_littera_gothica__ {
 	font-size: 14px;
 	font-family: "Montserrat";
 	color: rgb(85, 85, 85);
@@ -1279,7 +1284,7 @@ footer {
 	text-align: left;
 }
 
-.Soluta_nobis_option_bit_ly_1Hniso7 span a {
+.soluta_nobis_option_bit_ly_1Hniso7 span a {
 	color: #959595;
 }
 
@@ -1291,7 +1296,7 @@ footer {
 	text-align: left;
 }
 
-.Soluta_nobis_option_bit_ly_1Hniso7 {
+.soluta_nobis_option_bit_ly_1Hniso7 {
 	font-size: 14px;
 	font-family: "Montserrat";
 	color: rgb(85, 85, 85);
@@ -1324,7 +1329,7 @@ footer {
 }
 
 .dribble_widget img {
-	transition: transform 1.5s ease 0.5s;
+	transition: transform 1s ease 0.5s;
 }
 
 .dribble_widget img:hover {
@@ -1393,7 +1398,7 @@ footer {
 	color: orange;
 }
 
-.FAQ {
+.faq {
 	color: rgb(199, 178, 153) !important;
 }
 
@@ -1411,4 +1416,225 @@ footer {
 
 .designed_by span a:hover {
 	color: orange;
+}
+
+/*for media*/
+
+.toggle-menu {
+	display: none;
+}
+
+/*Media*/
+
+@media screen and (min-width: 992px) and (max-width: 1250px) {
+	.dribble_widget h2 {
+	font-size: 24px;
+	font-family: "Raleway";
+	color: rgb(255, 255, 255);
+	font-weight: bold;
+	line-height: 1.2;
+	text-align: left;
+	margin-top: 26px;
+}
+	.dribble_widget {
+		margin-right: 0;
+	}
+	
+	.dribble_widget h2 {
+		margin-bottom: 25px;
+	}
+	
+	.dribble_widget figure {
+		display: inline-block;
+		margin-top: 10px;
+	}
+	
+	.dribble_widget figure img:first-child {
+		margin-right: 10px;
+	}
+}
+
+@media screen and (min-width: 150px) and (max-width: 1020px) {
+	.icons {
+		display: none;
+	}
+	.main_nav {
+		display: none;
+		margin-left: 0;
+	}
+	.new_logo {
+		margin-right: 40px;
+	}
+}
+
+@media screen and (min-width: 100px) and (max-width: 992px) {
+	header {
+		justify-content: space-around;
+		align-items: center;
+	}
+	.leftarrow {
+	display: none;
+	}
+	.rightarrow {
+	display: none;
+	}
+	.media_main_nav {
+		display: none;
+	}
+
+	.toggle-menu {
+		display: block;
+		margin-top: 40px;
+	}
+	.toggle-menu label {
+		width: 200px;
+		height: 20px;
+		cursor: pointer;
+		font-size: 16px;
+		font-family: "Montserrat", sans-serif;
+		color: rgb(255, 255, 255);
+		line-height: 1.2;
+	}
+
+	#menu {
+		position: absolute;
+		opacity: 0;
+		z-index: -1;
+	}
+	#menu:checked ~ nav {
+		display: flex;
+		flex-direction: column;
+		position: absolute;
+		list-style: none;
+		font-size: 14px;
+		font-family: "Montserrat", sans-serif;
+		color: rgb(255, 255, 255);
+		line-height: 1.2;	
+	}
+	#menu:checked ~ nav li,
+	#menu:checked ~ nav a {
+		list-style: none;
+		text-decoration: none;
+		font-size: 14px;
+		font-family: "Montserrat", sans-serif;
+		color: rgb(255, 255, 255);
+		line-height: 1.2;
+		margin-top: 10px;
+	}
+	.counters {
+		flex-direction: column;
+		justify-content: center;
+	}
+	.counters div {
+		margin-right: 0;
+
+	}
+}
+
+@media screen and (max-width: 330px) {
+	.toggle-menu {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 310px) {
+	.new_logo {
+		margin-right: 0;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.nam_liber_tempor_cum_soluta_nobis_eleifend_opti {
+		display: none;
+	}
+	.services {
+		flex-direction: column;
+	}
+	.video {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.text_boxes_wrapper {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.text_boxes_paragraphs {
+		margin-right: 0;
+	}
+	.text_boxes_wrapper h2,
+	.text_boxes_wrapper p {
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.project_wrapper_1-3,
+	.project_wrapper_4-6 {
+		display: flex;
+		flex-direction: column;
+	}
+	.project_wrapper_1-3 article,
+	.project_wrapper_4-6 article {
+		margin-right: 0;
+	}
+	.project_wrapper_4-6 article {
+		margin-top: 0;
+		margin-bottom: 30px;
+	}
+
+	.iphone_pic {
+		display: none;
+	}
+	.article_wrapper {
+		flex-direction: column;
+	}
+	.recent_posts_first_article, 
+	.recent_posts_second_article {
+		margin-right: 0;
+	}
+	.article_wrapper article {
+		margin-top: 15px;
+	}
+	.our_partners {
+		display: none;
+	}
+	.additional_information {
+		flex-direction: column;
+		align-items: center;
+	}
+	.additional_information article {
+		margin-right: 0;
+	}
+	.recent_posts_footer h2,
+	.our_twitter h2,
+	.dribble_widget h2 {
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 560px) {
+	.local_menu {
+		flex-direction: column;
+	}
+	.local_menu button {
+		margin-top: 10px;
+	}
+}
+
+@media screen and (max-width: 1250px) {
+	.designed_by {
+		margin-right: 0;
+	}
+	.links {
+		margin-right: 0;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.designed_by {
+		display: none;
+	}
 }

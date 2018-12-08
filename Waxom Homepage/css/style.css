@@ -1544,9 +1544,6 @@ footer {
 		justify-content: center;
 		align-items: center;
 	}
-	.breadcrumbs li::before {
-		display: none;
-	}
 }
 
 @media screen and (max-width: 610px) {
@@ -1686,7 +1683,11 @@ footer {
 		display: none;
 	}
 	.breadcrumbs {
+		margin-left: 10px;
 		margin-right: 0;
+	}
+	.breadcrumbs li::before {
+		display: none;
 	}
 	.our_latest_projects {
 		display: none;
